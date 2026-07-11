@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>教室ジャンプ</title>
+
+<style>
+  body {
+    font-family: sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 420px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background: #0078ff;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #005fcc;
+  }
+
+  .note {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>教室ジャンプ</h1>
+
+  <input id="room" type="text" placeholder="教室番号を入力 (例: 301)">
+  <button onclick="jump()">移動する</button>
+
+  <div class="note">WireGuard 接続中のみ利用できます</div>
+</div>
+
+<script>
+function jump() {
+  const room = document.getElementById("room").value.trim();
+  if (!room) return;
+
+  // 例: /class/301.html に飛ばす
+  window.location.href = `https://attendance.is.it-chiba.ac.jp/attendance/class_room/${room}`;
+}
+</script>
+
+</body>
+</html>
