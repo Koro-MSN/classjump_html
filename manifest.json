@@ -10,6 +10,10 @@
       "src": "icon_360.png",
       "sizes": "360x360",
       "type": "image/png"
+    },{
+      "src": "icon_640.png",
+      "sizes": "640x640",
+      "type": "image/png"
     }
   ]
 }
