@@ -1,0 +1,15 @@
+{
+  "name": "ClassJump",
+  "short_name": "ClassJump",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0078ff",
+  "icons": [
+    {
+      "src": "school_96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}
