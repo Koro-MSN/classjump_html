@@ -7,8 +7,8 @@
   "theme_color": "#0078ff",
   "icons": [
     {
-      "src": "school_96.png",
-      "sizes": "96x96",
+      "src": "icon_360.png",
+      "sizes": "360x360",
       "type": "image/png"
     }
   ]
